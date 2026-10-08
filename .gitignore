@@ -1,0 +1,15 @@
+# 依赖（当前项目零依赖，预留）
+node_modules/
+
+# 环境变量（切勿提交密钥）
+.env
+.env.local
+
+# 周刊预览产物
+preview/
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
