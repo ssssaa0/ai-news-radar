@@ -1,0 +1,11 @@
+{
+  "name": "ai-news-radar",
+  "version": "0.4.0",
+  "description": "AI 资讯雷达 - RSS 聚合 + 标签筛选 + GitHub Actions 邮件周刊",
+  "private": true,
+  "scripts": {
+    "weekly": "node scripts/send-weekly.js",
+    "weekly:dry": "node scripts/send-weekly.js --dry-run",
+    "serve": "python -m http.server 8080"
+  }
+}
