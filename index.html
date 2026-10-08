@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 资讯雷达 · AI News Radar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-icon">AI</div>
+      <span>资讯雷达</span>
+    </div>
+    
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索中/英文标题、来源...">
+    </div>
+    
+    <button class="refresh-btn" id="refreshBtn" title="刷新所有 RSS 源">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="23 4 23 10 17 10"></polyline>
+        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+      </svg>
+      <span>刷新</span>
+    </button>
+    
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-tab="dashboard">全部资讯</button>
+      <button class="nav-tab" data-tab="recommend">个人推荐</button>
+      <button class="nav-tab" data-tab="digest">小结</button>
+      <button class="nav-tab" data-tab="tags">标签管理</button>
+      <button class="nav-tab" data-tab="sources">订阅源</button>
+    </div>
+  </div>
+</nav>
+
+<!-- 主内容 -->
+<main class="main-container" id="app">
+  <!-- 动态内容由 JS 渲染 -->
+</main>
+
+<script src="lib/core.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/translate.js"></script>
+<script src="js/rss.js"></script>
+<script src="js/recommend.js"></script>
+<script src="js/sync.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
